@@ -39,7 +39,7 @@ const app = express();
 
 */
 app.get('/', (req, res)=>{
-    res.send({giorgio: "gay!"});
+    res.send({Portfolio: "WD5"});
 });
 
 //app.listen(5000);
@@ -179,4 +179,13 @@ app.listen(PORT);
  // ----------------- Section 2 Lecture 15^ ----------------- //
  /*
         THIS IS WHAT YOU DO IN THE FUTURE TO RE DEPLOY YOUR APPLICATION
+
+        when you make changes add and commit your changes.
+        In terminal or command line in your folder type:
+        git add .
+        git commit -m "changed index.js"
+        git push heroku master
+
+        then heroku open
+
  */
