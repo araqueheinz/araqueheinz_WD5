@@ -1,3 +1,6 @@
+//TO RUN THE APP IN TERMINAL WRITE: node index.js
+
+
 /*
 Import express library by writing the command...
 We are going to be using common JS modules
@@ -36,11 +39,12 @@ const app = express();
 
 */
 app.get('/', (req, res)=>{
-    res.send({hi: 'there'});
+    res.send({giorgio: "gay!"});
 });
 
 //app.listen(5000);
 //http://localhost:5000
+//TO RUN THE APP IN TERMINAL WRITE: node index.js
 
 // ----------------- Section 2 Lecture 12 ----------------- //
 
@@ -67,6 +71,7 @@ app.get('/', (req, res)=>{
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
+//TO RUN THE APP IN TERMINAL WRITE: node index.js
 
 // 2. /////////////////////////////////// SPECIFY NODE ENVIRONMENT
 
@@ -113,5 +118,65 @@ app.listen(PORT);
 */
 
 
+// ----------------- Section 2 Lecture 13^ ----------------- //
 
+// 1. create a heroku account
 
+// 2. set your git at your folder 
+
+// 3. install heroku using terminal
+
+// 4. In terminal in your folder type: heroku login
+//      verify credentials
+
+/*
+
+    5.  In terminal or command line in your folder type: heroku create
+
+        Creating app... done, ⬢ stormy-headland-31614
+        https://stormy-headland-31614.herokuapp.com/ | https://git.heroku.com/stormy-headland-31614.git
+
+        - https://stormy-headland-31614.herokuapp.com/ 
+            this link, identifies the name of the application to heroku
+
+        - https://git.heroku.com/stormy-headland-31614.git
+            this link, is our deployment target
+
+*/
+
+/*
+    6. In terminal or command line in your folder type:
+        git remote add heroku https://git.heroku.com/stormy-headland-31614.git
+
+    this says add a remote repository to our current repository inside our server directory
+    we want to name that remote repo as heroku and this is the address 
+    of that remote repo: https://git.heroku.com/stormy-headland-31614.git
+
+    ➜  server git:(master) ✗ git remote add heroku https://git.heroku.com/stormy-headland-31614.git
+        fatal: remote heroku already exists.(this is totally fine)
+*/
+
+/*
+    7. In terminal or command line in your folder type:
+        git push heroku master
+*/
+
+/*
+    8. test out our application
+    In terminal or command line in your folder type:
+    heroku open
+ 
+ */
+
+ /*
+    9. (OPTIONAL is it is not working)
+    In terminal or command line in your folder type:
+    heroku logs
+
+    hopefully it will give you an idea of what went wrong!
+ */
+
+ // ----------------- Section 2 Lecture 15^ ----------------- //
+ /*
+        THIS IS WHAT YOU DO IN THE FUTURE TO RE DEPLOY YOUR APPLICATION
+ */
