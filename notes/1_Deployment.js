@@ -201,12 +201,12 @@ app.listen(PORT);
 
  /*
 
-    (OPTIONAL is it is not working)
+    (OPTIONAL if its not working)
     In terminal or command line in your folder type:
     heroku logs
 
     hopefully it will give you an idea of what went wrong!
-    
+
  */
 
  // ----------------- FUTURE DEPLOYMENT ----------------- //
