@@ -1,6 +1,13 @@
+//Express
+//Github
+//Heroku
+
+// ----------------- INSTALL EXPRESS ----------------- //
+
 //npm init
 //npm install --save express
 //cat package.json
+
 /*
         {
     "name": "server",
@@ -23,23 +30,22 @@
     }
 */
 
-//TO RUN THE APP IN TERMINAL WRITE: node index.js
-
+// ----------------- TO RUN THE APP IN TERMINAL WRITE: node index.js ----------------- //
 
 /*
-Import express library by writing the command...
-We are going to be using common JS modules
-Node js runtime only has support for common JS modules
-Common modules is a system implemented by NODE JS for requiring
-or sharing code between different files
+    Import express library by writing the command...
+    We are going to be using common JS modules
+    Node js runtime only has support for common JS modules
+    Common modules is a system implemented by NODE JS for requiring
+    or sharing code between different files
 */
 
 const express = require('express'); //JS modules
 
 /*
-import express from 'express' --> makes use of a different
-module system called ES 2015 modules NODE JS DID NOT HAVE 
-support for this system 
+    Import express from 'express' --> makes use of a different
+    module system called ES 2015 modules NODE JS DID NOT HAVE 
+    support for this system 
 */
 
 //We will now create our first express app
