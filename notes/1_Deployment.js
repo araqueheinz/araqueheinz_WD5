@@ -1,15 +1,11 @@
-//Express
-//Github
-//Heroku
-
 // ----------------- INSTALL EXPRESS ----------------- //
 
-//npm init
-//npm install --save express
-//cat package.json
-
 /*
-        {
+        npm init
+        npm install --save express
+        cat package.json 
+
+    {
     "name": "server",
     "version": "1.0.0",
     "main": "index.js",
@@ -28,6 +24,7 @@
     "devDependencies": {},
     "description": ""
     }
+
 */
 
 // ----------------- TO RUN THE APP IN TERMINAL WRITE: node index.js ----------------- //
@@ -69,6 +66,7 @@ const app = express();
     ever made this request.
 
 */
+
 app.get('/', (req, res)=>{
     res.send({Portfolio: "WD5_Test"});
 });
@@ -76,8 +74,6 @@ app.get('/', (req, res)=>{
 //app.listen(5000);
 //http://localhost:5000
 //TO RUN THE APP IN TERMINAL WRITE: node index.js
-
-// ----------------- Section 2 Lecture 12 ----------------- //
 
 /*
  Cloud Computing, Application Services
@@ -87,7 +83,7 @@ app.get('/', (req, res)=>{
     - https://www.digitalocean.com
 */
 
-// 1. /////////////////////////////////// DYNAMIC PORT BINDING
+// ----------------- 1. DYNAMIC PORT BINDING ----------------- //
 
     /*
     when heroku runs our application 
@@ -102,9 +98,8 @@ app.get('/', (req, res)=>{
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
-//TO RUN THE APP IN TERMINAL WRITE: node index.js
 
-// 2. /////////////////////////////////// SPECIFY NODE ENVIRONMENT
+// ----------------- 2. SPECIFY NODE ENVIRONMENT ----------------- // 
 
 /*
     Tell heroku to use a very specific version of node.js
@@ -120,7 +115,7 @@ app.listen(PORT);
 
 */
 
-// 3. /////////////////////////////////// SPECIFY START SCRIPT
+// ----------------- 3. SPECIFY START SCRIPT ----------------- //  
 
 /*
     Tell heroku what command to run to start our server
@@ -135,7 +130,7 @@ app.listen(PORT);
 
 */
 
-// 4. /////////////////////////////////// CREATE .gitignore FILE
+// ----------------- 4. CREATE .gitignore FILE ----------------- //   
 
 /*
     Create a .gitignore file to write what data type is 
@@ -148,21 +143,26 @@ app.listen(PORT);
 
 */
 
+// ----------------- GET A HEROKU ACCOUNT ----------------- //
 
-// ----------------- Section 2 Lecture 13^ ----------------- //
+/* 
 
-// 1. create a heroku account
+    1. create a heroku account
 
-// 2. set your git at your folder 
+    2. set your git at your folder 
 
-// 3. install heroku using terminal
+    3. install heroku using terminal
 
-// 4. In terminal in your folder type: heroku login
-//      verify credentials
+    4. In terminal in your folder type: heroku login
+        verify credentials
+
+*/
+
+// ----------------- SETUP HEROKU FOR DEPLOYMENT ----------------- //
 
 /*
 
-    5.  In terminal or command line in your folder type: heroku create
+    1.  In terminal or command line in your folder type: heroku create
 
         Creating app... done, ⬢ stormy-headland-31614
         https://stormy-headland-31614.herokuapp.com/ | https://git.heroku.com/stormy-headland-31614.git
@@ -173,41 +173,44 @@ app.listen(PORT);
         - https://git.heroku.com/stormy-headland-31614.git
             this link, is our deployment target
 
-*/
+            
+    2. In terminal or command line in your folder type:
 
-/*
-    6. In terminal or command line in your folder type:
-        git remote add heroku https://git.heroku.com/stormy-headland-31614.git
+            git remote add heroku https://git.heroku.com/stormy-headland-31614.git
 
-    this says add a remote repository to our current repository inside our server directory
-    we want to name that remote repo as heroku and this is the address 
-    of that remote repo: https://git.heroku.com/stormy-headland-31614.git
+        this says add a remote repository to our current repository inside our server directory
+        we want to name that remote repo as heroku and this is the address 
+        of that remote repo: https://git.heroku.com/stormy-headland-31614.git
 
-    ➜  server git:(master) ✗ git remote add heroku https://git.heroku.com/stormy-headland-31614.git
-        fatal: remote heroku already exists.(this is totally fine)
-*/
+        ➜  server git:(master) ✗ git remote add heroku https://git.heroku.com/stormy-headland-31614.git
+            fatal: remote heroku already exists.(this is totally fine)
 
-/*
-    7. In terminal or command line in your folder type:
+
+    3. In terminal or command line in your folder type:
+
         git push heroku master
+
+    4. test out our application:
+
+        In terminal or command line in your folder type:
+        heroku open
+ 
 */
 
-/*
-    8. test out our application
-    In terminal or command line in your folder type:
-    heroku open
- 
- */
+// ----------------- DEBUG HEROKU DEPLOYMENT ----------------- //
 
  /*
-    9. (OPTIONAL is it is not working)
+
+    (OPTIONAL is it is not working)
     In terminal or command line in your folder type:
     heroku logs
 
     hopefully it will give you an idea of what went wrong!
+    
  */
 
- // ----------------- Section 2 Lecture 15^ ----------------- //
+ // ----------------- FUTURE DEPLOYMENT ----------------- //
+
  /*
         THIS IS WHAT YOU DO IN THE FUTURE TO RE DEPLOY YOUR APPLICATION
 

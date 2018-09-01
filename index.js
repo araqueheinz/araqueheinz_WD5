@@ -1,6 +1,4 @@
- // ----------------- Section 3 Lecture 15^ ----------------- //
-
-//Install passport
+// ----------------- INSTALL PASSPORT ----------------- //
 
 /*
     1. In terminal or command line in your folder type:
@@ -30,29 +28,9 @@ const app = express();
 
 const keys = require('./config/keys.js');
 
-/*
-    we are going to pass 2 parameters:
-        1.  An Object with the client ID, 
-            Client secret and the url that
-            the user is going to be sent after
-            they come back from the google server
-        2. 
-*/
-passport.use(new GoogleStrategy({
-
-        clientID: keys.googleClientID,
-        clientSecret: keys.googleClientSecret,
-        callbackURL: '/auth/google/callback'
-
-    }, (accesToken)=>{
-        
-        console.log(accesToken);
-    })
-);
+// ----------------- GET CLIENT ID & CLIENT SECRET GOOGLE OAUTH ----------------- //
 
 /*
-    new GoogleStrategy() creates a new instance of Google passport Strategy
-    passport.use takes the specific strategy we are going to use to validate the user
     
     https://console.developers.google.com/apis/dashboard
 
@@ -87,27 +65,78 @@ passport.use(new GoogleStrategy({
 
     14. click create.
 
-    Here is your client ID:
-    
-    Here is your client secret:
-     
-
- */
-
- // ----------------- Section 3 Lecture 21^ ----------------- //
-
-/*
     Client Id: It is a public token, It is completely ok for everyone to see
         all it does is identify us to the google servers
 
     Client secret: Private token we don't want to share to anyone else!
         
- */
+*/
 
-         // --------- STORE CS Securely ---------//
+// --------- STORE CLIENT ID & CLIENT SECRET SECURELY  ---------//
+
+/*
+    Create a different folder & JS file in it
+    Create a:
+    module.exports object and store your keys in it example:
+
+        module.exports = {
+        googleClientID: 'blah blah blaha',
+        googleClientSecret: 'blah blah blaha'
+        }
+
+    in the .gitignore file write under node_modules
+    the name of the file you want git to ignore example:
+
+    node_modules
+    keys.js
+*/
 
 
+/*
+    new GoogleStrategy() creates a new instance of Google passport Strategy
+    passport.use takes the specific strategy we are going to use to validate the user
 
+*/
+
+/*
+    we are going to pass 2 arguments
+        1.  An Object with the client ID, 
+            Client secret and the url that
+            the user is going to be sent after
+            they come back from the google server
+        2. 
+*/
+passport.use(new GoogleStrategy({
+
+    clientID: keys.googleClientID,
+    clientSecret: keys.googleClientSecret,
+    callbackURL: '/auth/google/callback'
+
+    }, (accesToken)=>{
+        
+        console.log(accesToken);
+    })
+);
+
+/*
+        WE ARE GOING TO ADD A SINGLE ROUTE HANDLER
+    We reference the express app object 
+    We state the type or method of the request that we want to handle here
+        in this case we want to handle a get type HTTP request
+        
+    ------- The first argument ------- 
+    Is the path that we want to handle:
+        '/auth/google'
+
+    -------  The second argument ------- 
+    Is some code to be executed whenever the request comes into his route: 
+        () =>{}
+
+        in this case we are going to use passport.authenticate()
+*/
+
+app.get('/auth/google', passport.authenticate(''))
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
+
