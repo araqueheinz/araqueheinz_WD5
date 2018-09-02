@@ -19,3 +19,5 @@ The server recognized the token, therefore recognizes the user allowing them to 
 We are going to use cookie-based authentication.  That means that when we get some initial request like our Express API to log in we are going to generate a piece of information that is going to be sent back to the browser from the sever: 
 
 We are going to include what is called a header inside of the response that gets sent back to the browser! 
+
+All we care about what we receive from GoogleOAuth is the google user Id, that we are going to use to recognize the user's data!

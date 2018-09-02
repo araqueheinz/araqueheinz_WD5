@@ -1,0 +1,76 @@
+MongoDB is a nonrelational database management system that uses a 
+document-oriented database model which supports various forms of data. 
+
+We are going to use a remotely hosted instance of MongoDB. 
+We are going to use a third part service to host a copy of our 
+MongoDB for us!
+
+The third party we are going to use is: 
+    https://mlab.com
+
+1 - Create a new account. 
+
+2 - Click Create new
+
+3 - For now we are going to pick the free option:
+
+    Cloud Provider:
+        AMAZON WEB SERVICES
+
+    Plan Type:    
+        SANDBOX
+
+4 - Click Continue
+
+5 - Pick a region (which ever is closest to you)
+
+    US East
+
+6 - Click Continue
+
+7 - Pick a Database name and DB version (you can leave it at whatever it is)
+
+    wd5-dev
+
+8 - Click Continue
+
+PLAN TYPE	Sandbox
+CLOUD PROVIDER	Amazon Web Services
+REGION	US East (Virginia) (us-east-1)
+PLAN LINE & SIZE	
+Sandbox FREE
+STORAGE 
+0.5 GB
+MONGODB VERSION	3.6.7 (MMAPv1)
+DATABASE NAME	wd5-dev
+
+9 - Submit Order
+
+    We are going to click on the database and go to the dash board
+    we will see to warnings, however we only car about this one:
+        A database user is required to connect to this database. 
+
+    This warning refers to an USER that is going to be able to 
+    access the MOGODB database.
+
+    Like an administrative account.
+
+            WE ARE GOING TO ADD THIS USER
+
+1 - Click on the users tab
+
+2 - Click on Add database user
+    administrator_Heinz
+    fallo --- you know the rest...
+
+3 - make sure you create a fairly secure administrator 
+
+4 - make sure you DO NOT! click on Make read-only
+
+DONE!
+
+MOVE TO 5_Mongoose_Overview.txt
+
+
+
+
