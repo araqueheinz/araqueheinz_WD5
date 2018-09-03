@@ -1,14 +1,5 @@
-//Imports passport library 
 const passport = require('passport');
 
-/*
-
-Export the function that we will use to send a 
-HTTP request to the google servers and then get 
-a callback with all the user's profile and email
-information.
-
-*/
 module.exports = app =>{
 
     app.get('/auth/google', passport.authenticate('google', {
@@ -17,4 +8,17 @@ module.exports = app =>{
     );
 
     app.get('/auth/google/callback', passport.authenticate('google'))
+
+    app.get('/api/logout', (req, res)=>{
+ 
+    req.logout();
+
+    res.send(req.user)
+
+    })
+
+    app.get('/api/current_user', (req, res) =>{
+      
+        res.send(req.user);
+    })
 };
