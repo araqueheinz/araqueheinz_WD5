@@ -1,0 +1,63 @@
+In case your laptop gets stolen or you lost
+it, you need to store your keys somewhere where 
+they are going to be secure.
+
+We are going to create two sets of keys 
+that means two different mongodb databases
+
+The development database that we test, add, edit and 
+delete as we see fit and the Production database that 
+we set and don't touch ever again. 
+
+go to mlab.com and create another database
+create an administrator user different from
+the dev databases 
+
+go to https://console.developers.google.com and create a 
+separate project AraqueHeinz-WD5-prod. Go to the same process
+create credentials this time we are going to use the heroku url
+
+for Authorized Javascript Origin:
+
+https://stormy-headland-31614.herokuapp.com (Remember no / at the end)
+
+This is going to be our Authorized Redirect URI
+    https://stormy-headland-31614.herokuapp.com/auth/google/callback
+
+    "REMEMBER" this is the url given by heroku + /auth/google/callback the 
+    extension is going after going through the google server
+
+Done!
+
+We are going to create two new file inside the config folder
+dev.js and prod.js
+the keys.js is going to decide wether to pull the keys for development
+or Production
+
+in prod.js we are going to call the key values from something calle "environment 
+variables" using heroku. 
+
+the dev.js is going to be ignored and not commited to github however we do want to 
+commit the keys.js.
+
+Set up heroku
+
+    we are going to set up all the environment variables in heroku!
+
+    go to https://www.heroku.com
+
+    look for the app you're working on and click on it. 
+
+    go to settings --> reveal config variables.
+
+    ADD the keys and their value example:
+        COOKIE_KEY  lksndjksandjs
+
+    now lets do deployment, in terminal 
+    git add .
+    git commit -m 'message'
+    git push heroku master
+
+
+
+environment variables: https://devcenter.heroku.com/articles/config-vars

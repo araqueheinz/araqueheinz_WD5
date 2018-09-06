@@ -21,5 +21,13 @@
     "passport-google-oauth20": "^1.0.0"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "- REMINDER:",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/araqueheinz/AraqueHeinz_WD5.git"
+  },
+  "bugs": {
+    "url": "https://github.com/araqueheinz/AraqueHeinz_WD5/issues"
+  },
+  "homepage": "https://github.com/araqueheinz/AraqueHeinz_WD5#readme"
 }
