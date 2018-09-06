@@ -4,11 +4,11 @@
  or not
 */
 
-if(process.env.NODE_ENV === 'production'){
+if (process.env.NODE_ENV === 'production') {
     //We are in production environment - return the production keys
-    module.exports = require("./prod");
-}else{
+    module.exports = require('./prod');
+} else {
     //We are in development environment - return the development keys
-    module.export = require("./dev");
-
+    module.exports = require('./dev');
 }
+

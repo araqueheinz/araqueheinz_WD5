@@ -1,0 +1,85 @@
+Go to:
+https://github.com/facebook/create-react-app
+
+got to terminal, insider our server directory:
+    sudo npm install -g create-react-app
+
+We'll use this new tool to generate a bew project 
+inside our server directory.
+
+go to terminal, insider our server directory:
+    create-react-app client
+                        side note *IMPORTANT to call it client
+
+You'll see a new folder inside your server folder called client
+React application has its own server (L52). Why are we using express?
+
+The express server is solely concerned with  generating json data and 
+nothing else.
+
+the react server is gonna take all the component files, is going to 
+bundle them all together using "web pack and babel" and is going to
+spit out a single bundled js file that will be loaded to the browser
+
+We are going to figure out how to make the react server and the 
+express server work together nicely!
+
+We are going to make use of a package called CONCURRENTLY:
+    npm install --save concurrently
+
+that's gonna help use run two separate servers at the same time
+
+in the server's package.json we are going to write:
+    "client": "npm run start --prefix client" in the scripts
+
+example:
+ 
+ "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "client": "npm run start --prefix client"
+  },
+
+  --prefix client means run this command in the directory client!
+
+  now we are going to combine both commands dev and client in one command:
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+
+    "scripts": {
+        "start": "node index.js",
+        "server": "nodemon index.js",
+        "client": "npm run start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+
+NOTE: we change  "dev": "nodemon index.js", to "server": "nodemon index.js",
+and dev is now the concurrent command.
+     npm install --save concurrently
+
+
+We are going to write a peace of code inside the client package.json file
+that will kind of merge both servers together! 
+
+underneath the line that says private: true, we are going to write 
+"proxy": {
+    "/auth/google": {
+        "target": "http://localhost:5000"
+    }
+},
+ 
+ EXAMPLE:
+
+        {
+            "name": "client",
+            "version": "0.1.0",
+            "private": true,
+            "proxy": {
+                "/auth/google": {
+                    "target": "http://localhost:5000"
+                }
+            },
+
+We only have to set this in our development environment, because once the app is built:
+    npm run build
+
+the package.json is no more!

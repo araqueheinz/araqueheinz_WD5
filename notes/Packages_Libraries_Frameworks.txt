@@ -1,0 +1,26 @@
+     - Express:
+        npm install --save express
+
+     - Passport:
+        npm install --save passport 
+
+     - Passport Google OAuth Strategy
+        npm install --save passport passport-google-oauth20 
+    
+     - Nodemon:
+        npm install --save nodemon
+    
+     - Mongoose
+        npm install --save mongoose
+    
+     - Cookie-Session
+        npm install --save cookie-session
+    
+     - Create-React-App
+        sudo npm install -g create-react-app
+
+     - Create-React-App client
+        create-react-app client
+        
+     - Currently:
+        npm install --save concurrently

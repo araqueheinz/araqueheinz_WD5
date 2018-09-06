@@ -1,4 +1,4 @@
-// ----------------- 4 - 4COMING index.js  ----------------- //
+// ----------------- 4 - 4 COMING index.js  ----------------- //
 //Imports passport library 
 const passport = require('passport');
 
