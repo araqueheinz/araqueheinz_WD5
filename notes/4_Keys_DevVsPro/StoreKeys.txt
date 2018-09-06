@@ -58,6 +58,22 @@ Set up heroku
     git commit -m 'message'
     git push heroku master
 
+    Test this out in the browser
+    heroku open 
+
+    to fix the proxy issue with heroku go to 
+    passport.js and where you're using the google 
+    strategy add another parameter called proxy and set it to 
+    true, example: 
+
+        passport.use(new GoogleStrategy({
+
+            clientID: keys.googleClientID,
+            clientSecret: keys.googleClientSecret,
+            callbackURL: '/auth/google/callback',
+            proxy: true
+
+        },
 
 
 environment variables: https://devcenter.heroku.com/articles/config-vars
