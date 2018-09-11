@@ -1,8 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import { Provider} from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import App from './components/App';
+import reducers from './reducers';
+
+/*
+    We are to provide one reducer that is now 
+    going to be inside our redux store
+
+    we are going to have 2 reducers 
+    authReducer surveysReducer
+    reducers,
+*/
+const store= createStore(reducers, {}, applyMiddleware());
+
+//index.js is something that it is enforced automatically by creat-react-app
+ReactDOM.render(
+    <Provider store={store}><App /></Provider>,
+    document.querySelector('#root')
+);

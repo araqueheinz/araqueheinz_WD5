@@ -1,0 +1,8 @@
+We are going to work with react.js
+    1st - Delete every .js file EXCEPT for registerServiceWorker.js and of course
+            package.json
+            .gitignore
+            readme.md
+            yarn.lock
+
+    

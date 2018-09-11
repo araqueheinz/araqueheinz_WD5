@@ -24,3 +24,14 @@
         
      - Currently:
         npm install --save concurrently
+
+     - Redux:
+        npm install --save redux
+
+     - React-Redux
+        npm install --save react-redux
+    
+     - React-Router-Dom
+        npm install --save react-router-dom
+
+        
