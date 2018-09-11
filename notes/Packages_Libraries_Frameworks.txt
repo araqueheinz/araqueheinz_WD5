@@ -34,4 +34,8 @@
      - React-Router-Dom
         npm install --save react-router-dom
 
+     - Materialize
+        npm install --save materialize-css
+        
+
         

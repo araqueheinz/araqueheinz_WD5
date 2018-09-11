@@ -1,8 +1,27 @@
 We are going to work with react.js
-    1st - Delete every .js file EXCEPT for registerServiceWorker.js and of course
+    1 - Delete every .js file EXCEPT for registerServiceWorker.js and of course
             package.json
             .gitignore
             readme.md
             yarn.lock
+    
+
+
+    2 -  Install redux react redux and react router
+    
+            - Redux:
+                npm install --save redux
+
+            - React-Redux
+                npm install --save react-redux
+            
+            - React-Router-Dom
+                npm install --save react-router-dom
+            
+
+    3 - Create an index.js inside your src folder
+    4 - Create a reducers folder inside the src folder
+    5 - Create a component folder
+
 
     
