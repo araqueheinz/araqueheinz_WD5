@@ -9,10 +9,11 @@
     
      - Nodemon:
         npm install --save nodemon
-        https://nodemon.io/
+        https://github.com/remy/nodemon
     
      - Mongoose
         npm install --save mongoose
+        https://github.com/Automattic/mongoose
     
      - Cookie-Session
         npm install --save cookie-session
@@ -68,7 +69,13 @@
             create a file called .env in the root of your
             project:
 
-       
+    - Stripe
+        npm install --save stripe
+        https://stripe.com/docs/api/node#create_charge
+    
+    - Body-Parser
+        npm install --save body-parser
+        https://www.npmjs.com/package/body-parser
 
 
         
