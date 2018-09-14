@@ -9,7 +9,19 @@ class Header extends Component {
     renderContent(){
         switch(this.props.auth){
             case null:
-                return 'Still deciding';
+                return (
+                    <div className="preloader-wrapper big active">
+                        <div className="spinner-layer spinner-blue-only">
+                        <div className="circle-clipper left">
+                            <div className="circle"></div>
+                        </div><div className="gap-patch">
+                            <div className="circle"></div>
+                        </div><div className="circle-clipper right">
+                            <div className="circle"></div>
+                        </div>
+                        </div>
+                    </div>
+                )
 
             case false:
                 return (
@@ -21,7 +33,10 @@ class Header extends Component {
             default:
              return [
                 <li key="1"><Payments/></li>,
-                <li key="2"> <a href="/api/logout">Logout</a></li>
+                <li key="2" style={{margin: '0px 10px'}}> 
+                    Credits: {this.props.auth.credits}
+                </li>,
+                <li key="3"> <a href="/api/logout">Logout</a></li>
              ];
         }
     }
