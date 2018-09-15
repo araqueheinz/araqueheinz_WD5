@@ -44,6 +44,37 @@ require('./routes/authRoutes')(app);
 
 require('./routes/billingRoutes')(app);
 
+/*
+    We are going to add some configuration to make sure that express
+    behaves correctly when it is in the production environment. 
+
+    only runs whe it is at production
+*/
+
+if (process.env.NODE_ENV === 'production') {
+/*
+    Making sure that express will serve up 
+    production assets like our main.js file,
+    or main.css file!
+    
+*/
+    app.use(express.static('client/build'));
+
+/*
+    Express will serve up the index.html file
+    if it doesn't recognize the route
+
+*/  
+    const path = require('path');
+    app.get('*', (req, res) => {
+/*
+        Inside the client/build is a index.html
+*/
+      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    });
+  }
+
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT);

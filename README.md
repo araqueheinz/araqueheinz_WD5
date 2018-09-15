@@ -1,7 +1,7 @@
-TO START THE SERVERS
+TO START THE SERVERS: 
     npm run dev
 
-TO TEST THE STRIPE API:
+TO TEST THE STRIPE API: 
     Any email would do!
 
     Credit card number:
@@ -19,6 +19,10 @@ To Commit to HEROKU: git push heroku master
 To Commit to GITHUB: git push -u origin master
 
 - Heroku URL: https://stormy-headland-31614.herokuapp.com
+  Customizing the build process:
+  devDependencies:
+  https://devcenter.heroku.com/articles/nodejs-support#customizing-the-build-process
+ 
 
 - Git Projects URL: https://github.com/araqueheinz/AraqueHeinz_WD5/projects/
 
@@ -31,7 +35,7 @@ Used Services for the project:
      - Stripe:
      https://stripe.com/
 
-Used Libraries and Frameworks for the project:
+Used Libraries Modules and Frameworks for the project:
 
      - Express:
         npm install --save express
