@@ -74,6 +74,11 @@ Used Libraries Modules and Frameworks for the project:
 
      - Create-React-App client(name of the folder containing the app)
         create-react-app client
+    
+     - Lodash
+        comes with create react app
+        https://github.com/lodash/lodash
+
 
      - Currently:
         npm install --save concurrently

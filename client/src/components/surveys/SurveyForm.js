@@ -1,4 +1,6 @@
 //SurveyForm shows a form for a user to add input
+import _ from 'lodash';
+
 import React, { Component } from 'react';
 
 import { reduxForm, Field } from 'redux-form';
@@ -16,7 +18,7 @@ import validateEmails from '../../utils/validateEmails';
 class SurveyForm extends Component {
 
     renderFields() {
-      return formFields.map(formFields, ({ label, name }) => {
+      return _.map(formFields, ({ label, name }) => {
 
         return (
 
@@ -57,7 +59,7 @@ class SurveyForm extends Component {
     
       errors.recipients = validateEmails(values.recipients || '');
     
-      formFields.each(formFields, ({ name }) => {
+      _.each(formFields, ({ name }) => {
         if (!values[name]) {
           errors[name] = 'Do not leave this space blank';
         }
@@ -69,5 +71,8 @@ class SurveyForm extends Component {
     export default reduxForm({
       validate,
       form: 'surveyForm',
+      //This will help us to keep the input values,
+      //so if the user decides to go back, it doesn't need
+      //to type everything again
       destroyOnUnmount: false
     })(SurveyForm);

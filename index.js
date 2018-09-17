@@ -20,7 +20,7 @@ const keys = require('./config/keys');
 require('./models/User');
 
 //Import Survey.js to handle each users' survey inside MongoDb
-require('.models/Survey')
+require('./models/Survey')
 
 //Import passport to handle Google OAuth
 require('./services/passport');

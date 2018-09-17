@@ -2,10 +2,12 @@ import React from 'react';
 
 const Landing = () => {
     return(
-        <section>
-           
-       
-        </section>
+        <section style={{ textAlign: 'center' }}>
+      <h1>
+        WD5 Survey
+      </h1>
+      Send surveys and collect feedback!
+    </section>
     )
 };
 
