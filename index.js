@@ -19,8 +19,13 @@ const keys = require('./config/keys');
 //Import Users.js to handle collections in MongoDb
 require('./models/User');
 
+//Import Survey.js to handle each users' survey inside MongoDb
+require('.models/Survey')
+
 //Import passport to handle Google OAuth
 require('./services/passport');
+
+
 
 mongoose.connect(keys.mongoURI, {useNewUrlParser: true});
 
@@ -43,6 +48,8 @@ app.use(passport.session());
 require('./routes/authRoutes')(app);
 
 require('./routes/billingRoutes')(app);
+
+require('./routes/surveyRoutes')(app);
 
 /*
     We are going to add some configuration to make sure that express

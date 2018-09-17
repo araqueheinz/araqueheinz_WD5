@@ -24,8 +24,10 @@ To Commit to GITHUB: git push -u origin master
   https://devcenter.heroku.com/articles/nodejs-support#customizing-the-build-process
  
 
-- Git Projects URL: https://github.com/araqueheinz/AraqueHeinz_WD5/projects/
+ - Git Projects URL: https://github.com/araqueheinz/AraqueHeinz_WD5/projects/
 
+ - Error Protocol Reference: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+ 
 Used Services for the project:
 
      - HEROKU:
@@ -34,6 +36,11 @@ Used Services for the project:
      https://mlab.com/
      - Stripe:
      https://stripe.com/
+     - Sendgrid:
+     https://sendgrid.com
+     - MaterializeCSS:
+     https://materializecss.com/icons.html
+
 
 Used Libraries Modules and Frameworks for the project:
 
@@ -107,3 +114,16 @@ Used Libraries Modules and Frameworks for the project:
      - Body-Parser
         npm install --save body-parser
         https://www.npmjs.com/package/body-parser
+    
+     - SendGrid:
+        npm install --save sendgrid
+        https://sendgrid.com
+    
+     - Redux-Form
+        npm install --save redux-form
+        https://github.com/erikras/redux-form
+        https://redux-form.com/7.4.2/
+
+        
+
+
