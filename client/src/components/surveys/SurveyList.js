@@ -10,6 +10,7 @@ class SurveyList extends Component {
   }
 
   renderSurveys() {
+    //reverse to show the last array made, first
     return this.props.surveys.reverse().map(survey => {
       return (
         <div className="card darken-1" key={survey._id}>

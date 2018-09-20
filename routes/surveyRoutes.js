@@ -18,6 +18,7 @@ const surveyTemplate = require('../services/emailTemplates/surveyTemplate');
 const Survey = mongoose.model('surveys');
 
 module.exports = app => {
+
   app.get('/api/surveys', requireLogin, async (req, res) => {
     const surveys = await Survey.find({ _user: req.user.id }).select({
       recipients: false
@@ -25,7 +26,7 @@ module.exports = app => {
 
     res.send(surveys);
   });
-
+  
   app.get('/api/surveys/:surveyId/:choice', (req, res) => {
     res.send('We appreciate your feedback Fool!');
   });
@@ -82,8 +83,7 @@ module.exports = app => {
           recipients: {
             //with a given email and has not yet responded to the survey
             $elemMatch: { email: email, responded: false }
-          }
-        },
+          }},
         //after this singular subject has been found make this following update
         {
           //increment the choice "yes or no" to 1
