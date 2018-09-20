@@ -17,7 +17,8 @@ class Mailer extends helper.Mail {
     //sg is short for sendgrid
     this.sgApi = sendgrid(keys.sendGridKey);
 
-    this.from_email = new helper.Email('no-reply@wd5.com');
+    this.from_email = new helper.Email('do-not-reply-fool@wd5.com');
+    
     this.subject = subject;
     this.body = new helper.Content('text/html', content);
     this.recipients = this.formatAddresses(recipients);

@@ -2,6 +2,8 @@
 //going to contain inside the email we sent out
 const keys = require('../../config/keys');
 
+//This is the base email style the user is going to see when 
+//it opens it!
 module.exports = survey => {
   return `
     <html>

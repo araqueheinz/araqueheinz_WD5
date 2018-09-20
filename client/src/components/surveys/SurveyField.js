@@ -1,7 +1,7 @@
 //SurveyField contains logic o render a single label and text input
 import React from 'react';
 
-//Nested destructuring 2 levels of destructuring
+//Nested destructuring, 2 levels of destructuring
 export default ({ input, label, meta: { error, touched } }) => {
   return (
     <div>

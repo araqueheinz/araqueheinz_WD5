@@ -56,7 +56,8 @@ class SurveyForm extends Component {
     function validate(values) {
 
       const errors = {};
-    
+      
+      //If there is nt error display nothing empty
       errors.recipients = validateEmails(values.recipients || '');
     
       _.each(formFields, ({ name }) => {
@@ -68,8 +69,11 @@ class SurveyForm extends Component {
       return errors;
     }
     
+    //This is where we initially wired up redux-form
     export default reduxForm({
       validate,
+      //this is going to store all the values from the form
+      //out on the redux store!
       form: 'surveyForm',
       //This will help us to keep the input values,
       //so if the user decides to go back, it doesn't need

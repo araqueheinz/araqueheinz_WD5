@@ -38,6 +38,7 @@ Used Services for the project:
      https://stripe.com/
      - Sendgrid:
      https://sendgrid.com
+     https://app.sendgrid.com/settings/mail_settings
      - MaterializeCSS:
      https://materializecss.com/icons.html
 
@@ -78,7 +79,9 @@ Used Libraries Modules and Frameworks for the project:
      - Lodash
         comes with create react app
         https://github.com/lodash/lodash
-
+     
+     - WithRouter
+        https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/withRouter.md
 
      - Currently:
         npm install --save concurrently
@@ -129,6 +132,13 @@ Used Libraries Modules and Frameworks for the project:
         https://github.com/erikras/redux-form
         https://redux-form.com/7.4.2/
 
+     - Localtunnel
+        npm install -save localtunnel
+        https://localtunnel.github.io/www/
+
+     - Lodash path-parser
+        npm install --save lodash path-parser
+        https://github.com/troch/path-parser
         
 
 

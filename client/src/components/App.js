@@ -30,7 +30,7 @@ class App extends Component{
         return(
             <div className="container">
                 <BrowserRouter>
-                    <div className="container">
+                    <div>
                         {/*
                             Why use exact={true}?
 
