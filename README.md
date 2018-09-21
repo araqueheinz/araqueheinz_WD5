@@ -1,3 +1,15 @@
+Include a parragraph about th e project explanation.
+tell me about the project 
+how it addresses the project requirements
+youtube video under 2 minutes demonstrating the functionality of the app
+3 screenshots of the app
+
+google markdown! 
+syntax for styling readme 
+
+
+
+
 TO START THE SERVERS: 
     npm run dev
 
