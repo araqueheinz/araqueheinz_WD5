@@ -19,7 +19,8 @@ For this project, on the server side I used node.js and the express library to c
 
 ### Getting Started
 To test this application in the dev environment the user will need to create a file inside the config folder called dev.js and export from that file the following information: 
-    module.exports = {
+
+        
         googleClientID: '',
         googleClientSecret: '',
         mongoURI: '',
@@ -28,7 +29,7 @@ To test this application in the dev environment the user will need to create a f
         stripeSecretKey: '',
         sendGridKey: '',
         redirectDomain: 'http://localhost:3000'
-    }
+        
 
 You will need to:
 - Generate credentials in Google and Google OAuth 2.0
