@@ -1,48 +1,46 @@
-Include a parragraph about th e project explanation.
-tell me about the project 
-how it addresses the project requirements
-youtube video under 2 minutes demonstrating the functionality of the app
-3 screenshots of the app
-
-google markdown! 
-syntax for styling readme 
-
-
 # Project & Portfolio 5
-I took this opportunity to push myself and deliver more than required. Although it was a tough month I was able to finish most of the functionality and even though it does not contain an amazing style, I’m still proud of it. 
+I took this opportunity to push myself and deliver more than required. Although it was a tough month I was able to finish most of the functionality and even though it does not contain an amazing style, I’m still proud of it. I would like to give special thanks to Brad Beltowski and Chris Tonucci, for helping me trouble shoot when I couldn't find an answer and to Stephen Grider for his amazing tutorials and diagrams that helped me understand what was happening behind the scene. I chose to do this project because I wanted to have a sense of what being a master full stack developer is. 
 
+## Project name (Survey Fast)
+Survey Fast is a full stack application that will allow the user to write survey questions, send them to a list of recipients and then record their feedback for future improvement on the company’s service or quality of their products. When you log in in Survey Fast you have a dashboard with all the surveys you’ve sent, from the most recent to the last survey the user has sent. Every time the user wishes to send a new survey, they will need to use 1 credit.  The user can buy 5 credits that will allow them to send 5 different surveys to as many recipients they want. 
 
-TO START THE SERVERS: 
-    npm run dev
+### Project requirements
+For this project, on the server side I used node.js and the express library to connect to the server. I used passport and passport Google OAuth Strategy to give my app the ability to login with Google. On the client side I used React.js for the interface, stripe API to be able to handle payments and finally sendgrid API to receive notifications and feedback from the users.  
 
-TO TEST THE STRIPE API: 
-    Any email would do!
+### Credit card. Test stripe API (Payments)
+> Any email would do!
+> Credit card number:
+> Visa: 4242 4242 4242 4242.
+> Mastercard: 5555 5555 5555 4444.
+> American Express: 3782 822463 10005.
+> Exp date: any date in the future
+> cvc number: any 3 digits would do!
 
-    Credit card number:
-    Visa: 4242 4242 4242 4242.
-    Mastercard: 5555 5555 5555 4444.
-    American Express: 3782 822463 10005.
+###Getting Started
+To test this application in the dev environment the user will need to create a file inside the config folder called dev.js and export from that file the following information: 
+    module.exports = {
+        googleClientID: '',
+        googleClientSecret: '',
+        mongoURI: '',
+        cookieKey: '',
+        stripePublishableKey: '',
+        stripeSecretKey: '',
+        sendGridKey: '',
+        redirectDomain: 'http://localhost:3000'
+    }
 
-    Exp date: any date in the future
-    cvc number: any 3 digits would do!
+You will need to:
+- Generate credentials in Google and Google OAuth 2.0
+- Create an account in mlab.com, generate a database with a administrator user
+- Create a cookieKey that could be any type of random strings
+- Create an account in stripe.com and generate credentials
+- Create an account in sendgrid.com and change the email notification settings 
 
-- REMINDER:
+###Getting Started: 
+> npm run dev
 
-To Commit to HEROKU: git push heroku master
-
-To Commit to GITHUB: git push -u origin master
-
-- Heroku URL: https://stormy-headland-31614.herokuapp.com
-  Customizing the build process:
-  devDependencies:
-  https://devcenter.heroku.com/articles/nodejs-support#customizing-the-build-process
- 
-
- - Git Projects URL: https://github.com/araqueheinz/AraqueHeinz_WD5/projects/
-
- - Error Protocol Reference: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
- 
-Used Services for the project:
+###Under the Hood
+> Used Services for the project:
 
      - HEROKU:
      https://www.heroku.com/home
@@ -56,8 +54,7 @@ Used Services for the project:
      - MaterializeCSS:
      https://materializecss.com/icons.html
 
-
-Used Libraries Modules and Frameworks for the project:
+> Used Libraries Modules and Frameworks for the project:
 
      - Express:
         npm install --save express
@@ -153,6 +150,24 @@ Used Libraries Modules and Frameworks for the project:
      - Lodash path-parser
         npm install --save lodash path-parser
         https://github.com/troch/path-parser
-        
+
+### Extra Info
+
+- Heroku URL: https://stormy-headland-31614.herokuapp.com
+  Customizing the build process:
+  devDependencies:
+  https://devcenter.heroku.com/articles/nodejs-support#customizing-the-build-process
+ 
+
+ - Git Projects URL: https://github.com/araqueheinz/AraqueHeinz_WD5/projects/
+
+ - Error Protocol Reference: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html 
+
+### REMINDER:
+
+To Commit to HEROKU: git push heroku master
+
+To Commit to GITHUB: git push -u origin master
 
 
+ 
