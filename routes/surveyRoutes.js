@@ -31,9 +31,9 @@ module.exports = app => {
     res.send('We appreciate your feedback Fool!');
   });
 
-  app.post('/api/surveys/webhooks', (req, res) => {
+  app.post('/api/surveys/webhook', (req, res) => {
     
-    const p = new Path('/api/surveys/:surveyId/:choice');
+     const p = new Path('/api/surveys/:surveyId/:choice');
 
     /*
 

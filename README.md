@@ -8,6 +8,8 @@ google markdown!
 syntax for styling readme 
 
 
+# Project & Portfolio 5
+I took this opportunity to push myself and deliver more than required. Although it was a tough month I was able to finish most of the functionality and even though it does not contain an amazing style, I’m still proud of it. 
 
 
 TO START THE SERVERS: 
