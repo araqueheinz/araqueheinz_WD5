@@ -8,13 +8,13 @@ Survey Fast is a full stack application that will allow the user to write survey
 For this project, on the server side I used node.js and the express library to connect to the server. I used passport and passport Google OAuth Strategy to give my app the ability to login with Google. On the client side I used React.js for the interface, stripe API to be able to handle payments and finally sendgrid API to receive notifications and feedback from the users.  
 
 ### Credit card. Test stripe API (Payments)
-> Any email would do!
-> Credit card number:
-> Visa: 4242 4242 4242 4242.
-> Mastercard: 5555 5555 5555 4444.
-> American Express: 3782 822463 10005.
-> Exp date: any date in the future
-> cvc number: any 3 digits would do!
+        Any email would do!
+        Credit card number:
+        Visa: 4242 4242 4242 4242.
+        Mastercard: 5555 5555 5555 4444.
+        American Express: 3782 822463 10005.
+        Exp date: any date in the future
+        cvc number: any 3 digits would do!
 
 ###Getting Started
 To test this application in the dev environment the user will need to create a file inside the config folder called dev.js and export from that file the following information: 
