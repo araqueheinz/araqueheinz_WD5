@@ -14,9 +14,10 @@ For this project, on the server side I used node.js and the express library to c
         Mastercard: 5555 5555 5555 4444.
         American Express: 3782 822463 10005.
         Exp date: any date in the future
-        cvc number: any 3 digits would do!
+        cvc number: any 3 digits would do.
 
-###Getting Started
+
+### Getting Started
 To test this application in the dev environment the user will need to create a file inside the config folder called dev.js and export from that file the following information: 
     module.exports = {
         googleClientID: '',
@@ -36,10 +37,10 @@ You will need to:
 - Create an account in stripe.com and generate credentials
 - Create an account in sendgrid.com and change the email notification settings 
 
-###Getting Started: 
+### Getting Started: 
 > npm run dev
 
-###Under the Hood
+### Under the Hood
 > Used Services for the project:
 
      - HEROKU:
@@ -155,10 +156,9 @@ You will need to:
 
 - Heroku URL: https://stormy-headland-31614.herokuapp.com
   Customizing the build process:
-  devDependencies:
+- devDependencies:
   https://devcenter.heroku.com/articles/nodejs-support#customizing-the-build-process
  
-
  - Git Projects URL: https://github.com/araqueheinz/AraqueHeinz_WD5/projects/
 
  - Error Protocol Reference: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html 
