@@ -1,5 +1,5 @@
 # Project & Portfolio 5
-I took this opportunity to push myself and deliver more than required. Although it was a tough month I was able to finish most of the functionality and even though it does not contain an amazing style, I’m still proud of it. I would like to give special thanks to Brad Beltowski and Chris Tonucci, for helping me trouble shoot when I couldn't find an answer and to Stephen Grider for his amazing tutorials and diagrams that helped me understand what was happening behind the scene. I chose to do this project because I wanted to have a sense of what being a master full stack developer is. 
+I took this opportunity to push myself and deliver more than required. Although it was a tough month I was able to finish most of the functionality and even though it does not contain an amazing style, I’m still proud of it. I would like to give special thanks to Brad Beltowski and Chris Tonucci, for helping me troubleshoot when I couldn't find an answer and to Stephen Grider for his amazing tutorials and diagrams that helped me understand what was happening behind the scene. I chose to do this project because I wanted to have a sense of what being a master full stack developer is. 
 
 ## Project name (Survey Fast)
 Survey Fast is a full stack application that will allow the user to write survey questions, send them to a list of recipients and then record their feedback for future improvement on the company’s service or quality of their products. When you log in in Survey Fast you have a dashboard with all the surveys you’ve sent, from the most recent to the last survey the user has sent. Every time the user wishes to send a new survey, they will need to use 1 credit.  The user can buy 5 credits that will allow them to send 5 different surveys to as many recipients they want. 
@@ -173,7 +173,7 @@ To Commit to HEROKU: git push heroku master
 To Commit to GITHUB: git push -u origin master
 
 ### Special Thanks
-I would like to give special thanks to Brad Beltowski and Chris Tonucci, for helping me trouble shoot when I couldn't find an answer and to Stephen Grider for his amazing React, Redux and node tutorials and diagrams that helped me understand what was happening behind the scene.
+I would like to give special thanks to Brad Beltowski and Chris Tonucci, for helping me troubleshoot when I couldn't find an answer and to Stephen Grider for his amazing React, Redux and node tutorials and diagrams that helped me understand what was happening behind the scene.
 
 #### Try my app:
 Heroku Url: https://stormy-headland-31614.herokuapp.com
