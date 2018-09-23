@@ -39,8 +39,8 @@ You will need to:
 - Create an account in sendgrid.com and change the email notification settings 
 
 ### Getting Started: 
-> npm install npm
-> npm run dev
+ - npm install npm
+ - npm run dev
 
 ### Under the Hood
 > Used Services for the project:
@@ -157,9 +157,10 @@ You will need to:
 ### Extra Info
 
 - Heroku URL: https://stormy-headland-31614.herokuapp.com
-  Customizing the build process:
-- devDependencies:
-  https://devcenter.heroku.com/articles/nodejs-support#customizing-the-build-process
+
+#### Customizing the build process
+
+- devDependencies: https://devcenter.heroku.com/articles/nodejs-support#customizing-the-build-process
  
 - Git Projects URL: https://github.com/araqueheinz/AraqueHeinz_WD5/projects/
 
