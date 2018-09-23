@@ -160,15 +160,21 @@ You will need to:
 - devDependencies:
   https://devcenter.heroku.com/articles/nodejs-support#customizing-the-build-process
  
- - Git Projects URL: https://github.com/araqueheinz/AraqueHeinz_WD5/projects/
+- Git Projects URL: https://github.com/araqueheinz/AraqueHeinz_WD5/projects/
 
- - Error Protocol Reference: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html 
+- Error Protocol Reference: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html 
 
 ### REMINDER:
 
 To Commit to HEROKU: git push heroku master
 
 To Commit to GITHUB: git push -u origin master
+
+### Special Thanks
+I would like to give special thanks to Brad Beltowski and Chris Tonucci, for helping me trouble shoot when I couldn't find an answer and to Stephen Grider for his amazing React, Redux and node tutorials and diagrams that helped me understand what was happening behind the scene.
+
+#### Try my app:
+Heroku Url: https://stormy-headland-31614.herokuapp.com
 
 
  
