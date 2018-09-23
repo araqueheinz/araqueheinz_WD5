@@ -39,6 +39,7 @@ You will need to:
 - Create an account in sendgrid.com and change the email notification settings 
 
 ### Getting Started: 
+> npm install npm
 > npm run dev
 
 ### Under the Hood
